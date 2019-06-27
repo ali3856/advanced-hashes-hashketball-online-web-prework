@@ -94,3 +94,16 @@ def game_hash
       :slam_dunks => 12},}}
     }
 end
+
+def num_points_scored(name)
+  #binding.pry 
+  game_hash
+  if game_hash[:home][:players].key?(name) 
+  #binding.pry
+  game_hash[:home][:players][name][:points]
+  
+  elsif game_hash[:away][:players].key?(name) 
+  #binding.pry 
+  game_hash[:away][:players][name][:points]
+end
+end
