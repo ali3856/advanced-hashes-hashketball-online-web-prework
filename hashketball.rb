@@ -10,7 +10,7 @@ def game_hash
       :steals => 3,
       :blocks => 1,
       :slam_dunks => 1},
-      "Reggie Evans" =>  
+      "Reggie Evans" =>
       {:number => 30,
       :shoe => 14,
       :points => 12,
@@ -96,14 +96,14 @@ def game_hash
 end
 
 def num_points_scored(name)
-  #binding.pry 
+  #binding.pry
   game_hash
-  if game_hash[:home][:players].key?(name) 
+  if game_hash[:home][:players].key?(name)
   #binding.pry
   game_hash[:home][:players][name][:points]
-  
-  elsif game_hash[:away][:players].key?(name) 
-  #binding.pry 
+
+  elsif game_hash[:away][:players].key?(name)
+  #binding.pry
   game_hash[:away][:players][name][:points]
 end
 end
